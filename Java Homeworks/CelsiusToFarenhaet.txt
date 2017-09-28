@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+/**
+ * Created by Ivan on 24.1.2017 ã..
+ */
+public class SimpleCalculations {
+    public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+       double celsius = Double.parseDouble(scanner.nextLine());
+       double farenhait = celsius * 1.8 + 32;
+       System.out.printf("%.2f",farenhait);
+    }
+}

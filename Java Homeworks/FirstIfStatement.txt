@@ -1,0 +1,22 @@
+import java.io.PrintStream;
+import java.util.Scanner;
+
+/**
+ * Created by Ivan on 24.1.2017 ã..
+ */
+public class SimpleCalculations {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int a = Integer.parseInt(scanner.nextLine());
+        int b = Integer.parseInt(scanner.nextLine());
+
+        if ( a > b   ){
+            System.out.println("a is bigger than b");
+
+        }
+            else{
+            System.out.println("a is less than b");
+        }
+
+    }
+}

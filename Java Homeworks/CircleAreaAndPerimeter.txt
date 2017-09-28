@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+/**
+ * Created by Ivan on 24.1.2017 ã..
+ */
+public class SimpleCalculations {
+    public static void main(String[] args){
+     Scanner scanner = new Scanner(System.in);
+     double radian = Double.parseDouble(scanner.nextLine());
+     double area = Math.PI * radian  * radian;
+     double perimeter = 2 * Math.PI * radian;
+        System.out.println(area);
+        System.out.println(perimeter);
+    }
+}

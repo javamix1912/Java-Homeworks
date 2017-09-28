@@ -1,0 +1,29 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int firstPl = Integer.parseInt(scanner.nextLine());
+        int secondPl = Integer.parseInt(scanner.nextLine());
+        int thirdPl = Integer.parseInt(scanner.nextLine());
+
+        int sumTime = firstPl + secondPl + thirdPl;
+
+        int minutes = sumTime / 60;
+        int seconds = sumTime % 60;
+
+        System.out.printf("%d:%02d",minutes,seconds);
+    }
+}
+
+
+
+
+
+
+
+

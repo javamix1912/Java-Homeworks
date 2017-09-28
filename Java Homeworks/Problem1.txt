@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+/**
+ * Created by Ivan on 17.1.2017 ã..
+ */
+public class InchesToCentimeteres {
+    public static void main(String[] args) throws InterruptedException {
+        Scanner scanner = new Scanner(System.in);
+        double whiskeyPrice = Double.parseDouble(scanner.nextLine());
+        double beer = Double.parseDouble(scanner.nextLine());
+        double wine = Double.parseDouble(scanner.nextLine());
+        double rakia = Double.parseDouble(scanner.nextLine());
+        double whiskey = Double.parseDouble(scanner.nextLine());
+
+        double rakiaPrice = whiskeyPrice / 2.0;
+        double winePrice = rakiaPrice - (rakiaPrice * 0.40);
+        double beerPrice = rakiaPrice - (rakiaPrice * 0.80);
+
+        double priceRakia = rakiaPrice * rakia;
+        double priceWine = winePrice * wine;
+        double priceBeer = beer * beerPrice;
+        double priceWhiskey = whiskey * whiskeyPrice;
+
+        double money = priceBeer + priceRakia + priceWhiskey + priceWine;
+
+
+        System.out.printf("%.2f",money );
+
+
+    }
+}
+

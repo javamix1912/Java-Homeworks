@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+/**
+ * Created by Ivan on 17.1.2017 ã..
+ */
+public class InchesToCentimeteres {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double inches = Double.parseDouble(scanner.nextLine());
+        double centimeteres = inches * 2.54;
+        System.out.println(centimeteres);
+
+    }
+}

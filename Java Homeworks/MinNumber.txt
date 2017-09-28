@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+/**
+ * Created by Ivan on 19.2.2017 ã..
+ */
+public class Loops {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = Integer.parseInt(scanner.nextLine());
+        int big = Integer.MAX_VALUE;
+
+        for (int i = 0; i < n ; i++) {
+            int number = Integer.parseInt(scanner.nextLine());
+            if(number<big){
+                big = number;
+            }
+        }
+        System.out.println(big);
+    }
+}
+
+----------------------------------------
+import java.util.Scanner;
+
+/**
+ * Created by Ivan on 17.1.2017 ã..
+ */
+public class InchesToCentimeteres {
+    public static void main(String[] args) throws InterruptedException {
+
+
+        Scanner scanner = new Scanner(System.in);
+
+        int n = Integer.parseInt(scanner.nextLine());
+        int minValue = Integer.MAX_VALUE;
+
+        for (int i = 0; i < n ; i++) {
+            int number = Integer.parseInt(scanner.nextLine());
+            if (number<maxValue) {
+                maxValue = number;
+            }
+
+        }
+        System.out.println(maxValue);
+    }
+}
+
+

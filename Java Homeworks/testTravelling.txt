@@ -1,0 +1,71 @@
+
+
+import java.util.Scanner;
+
+/**
+ * Created by Ivan on 14.2.2017 ã..
+ */
+public class ComplexIfElse {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double budget = Double.parseDouble(scanner.nextLine());
+        String season = scanner.nextLine();
+        boolean case1 = budget <=100;
+        boolean case2 = budget <=1000;
+        boolean case3 = budget >1000;
+
+        if (case1) {
+            switch (season) {
+                case "summer":
+               //     System.out.println(budget * 0.3);
+                    System.out.printf("%.2f%n",budget * 0.3);
+                    break;
+                case "winter" :
+             //       System.out.println(budget * 0.7);
+                    System.out.printf("%.2f%n",budget * 0.7);
+                    break;
+            }
+        }       else if (case2) {
+                switch (season) {
+                    case "summer":
+               //         System.out.println(budget * 0.4);
+                        System.out.printf("%.2f%n",budget * 0.4);
+                        break;
+                    case "winter" :
+               //         System.out.println(budget * 0.8);
+                        System.out.printf("%.2f%n",budget * 0.8);
+                        break;
+                }
+            } else if (case3){
+            switch (season) {
+                case "summer":
+           //         System.out.println(budget * 0.9);
+                    System.out.printf("%.2f%n",budget * 0.9);
+                    break;
+                case "winter" :
+           //         System.out.println(budget * 0.9);
+                    System.out.printf("%.2f%n",budget * 0.9);
+                    break;
+            }
+
+        }
+
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

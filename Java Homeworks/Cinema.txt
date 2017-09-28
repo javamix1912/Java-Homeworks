@@ -1,0 +1,38 @@
+
+
+import java.util.Scanner;
+
+/**
+ * Created by Ivan on 14.2.2017 ã..
+ */
+public class ComplexIfElse {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String projection = scanner.nextLine().toLowerCase();
+
+        double rows = Double.parseDouble(scanner.nextLine());
+        double columns = Double.parseDouble(scanner.nextLine());
+        double result = rows * columns;
+
+        if (projection.equals("premiere")) {
+            System.out.printf("%.2f",result * 12.00);
+        } else if (projection.equals("normal")) {
+            System.out.printf("%.2f",result * 7.5);
+        } else {
+            System.out.printf("%.2f",result * 5.0);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class DrawingWithLoops {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String day = scanner.nextLine().toLowerCase();
+        int age = Integer.parseInt(scanner.nextLine());
+        int price = 0;
+
+        if (age > 122 || age < 0){
+            System.out.println("Error!");
+        }
+        if(day.equals("weekday") && (age>=0 && age <= 18)){
+            price = 12;
+            System.out.printf("%d$",price);
+        } else  if(day.equals("weekday") && (age> 18 && age <= 64)){
+            price = 18;
+            System.out.printf("%d$",price);
+        } else  if(day.equals("weekday") && (age>64 && age <= 122)){
+            price = 12;
+            System.out.printf("%d$",price);
+        }
+
+
+        if(day.equals("weekend") && (age>=0 && age <= 18)){
+            price = 15;
+            System.out.printf("%d$",price);
+        } else  if(day.equals("weekend") && (age> 18 && age <= 64)){
+            price = 20;
+            System.out.printf("%d$",price);
+        } else  if(day.equals("weekend") && (age>64 && age <= 122)){
+            price = 15;
+            System.out.printf("%d$",price);
+        }
+
+
+        if(day.equals("holiday") && (age>=0 && age <= 18)){
+            price = 5;
+            System.out.printf("%d$",price);
+        } else  if(day.equals("holiday") && (age> 18 && age <= 64)){
+            price = 12;
+            System.out.printf("%d$",price);
+        } else  if(day.equals("holiday") && (age>64 && age <= 122)){
+            price = 10;
+            System.out.printf("%d$",price);
+        }
+    }
+}
+

@@ -1,0 +1,75 @@
+
+import java.util.Scanner;
+
+/**
+ * Created by Ivan on 14.2.2017 ã..
+ */
+public class ComplexIfElse {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String town = scanner.nextLine();
+        double salesQty = Double.parseDouble(scanner.nextLine());
+
+        if (salesQty >= 0) {
+            boolean case1 = salesQty <= 500;
+            boolean case2 = salesQty > 500 && salesQty <= 1000;
+            boolean case3 = salesQty > 1000 && salesQty <= 10000;
+            boolean case4 = salesQty > 10000;
+
+            switch (town) {
+                case "Sofia":
+                    if (case1) {
+                        System.out.printf("%.2f%n" ,salesQty * 0.05);
+                    } else if (case2) {
+                        System.out.printf("%.2f%n", salesQty * 0.07);
+                    } else if (case3) {
+                        System.out.printf("%.2f%n", salesQty * 0.08);
+                    } else {
+                        System.out.printf("%.2f%n", salesQty * 0.12);
+                    }
+                    break;
+                case "Varna":
+                    if (case1) {
+                        System.out.printf("%.2f%n",salesQty * 0.045);
+                    } else if (case2) {
+                        System.out.printf("%.2f%n", salesQty * 0.075);
+                    } else if (case3) {
+                        System.out.printf("%.2f%n", salesQty * 0.10);
+                    } else {
+                        System.out.printf("%.2f%n", salesQty * 0.13);
+                    }
+                    break;
+                case "Plovdiv":
+                    if (case1) {
+                        System.out.printf("%.2f%n",salesQty * 0.055);
+                    } else if (case2) {
+                        System.out.printf("%.2f%n", salesQty * 0.08);
+                    } else if (case3) {
+                        System.out.printf("%.2f%n", salesQty * 0.12);
+                    } else {
+                        System.out.printf("%.2f%n", salesQty * 0.145);
+                    }
+                    break;
+                default:
+                    System.out.println("error");
+            }
+
+
+        } else {
+            System.out.println("error");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

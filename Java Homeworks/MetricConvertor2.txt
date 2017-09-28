@@ -1,0 +1,57 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double num = Double.parseDouble(scanner.nextLine());
+        String from = scanner.nextLine();
+        String to = scanner.nextLine();
+
+        if (from.equalsIgnoreCase("mm")){
+            num = num / 1000.0;
+        } else if (from.equalsIgnoreCase("cm")){
+            num = num / 100.0;
+        } else if (from.equalsIgnoreCase("mi")){
+            num = num / 0.000621371192;
+        }else if (from.equalsIgnoreCase("in")){
+            num = num / 39.3700787;
+        }else if (from.equalsIgnoreCase("km")){
+            num = num / 0.001;
+        }else if (from.equalsIgnoreCase("ft")){
+            num = num / 3.2808399;
+        }else if (from.equalsIgnoreCase("yd")){
+            num = num / 1.0936133;
+        }
+        if (to.equalsIgnoreCase("mm")){
+            num = num * 1000.0;
+        } else if (to.equalsIgnoreCase("cm")){
+            num = num * 100.0;
+        } else if (to.equalsIgnoreCase("mi")){
+            num = num * 0.000621371192;
+        }else if (to.equalsIgnoreCase("in")){
+            num = num * 39.3700787;
+        }else if (to.equalsIgnoreCase("km")){
+            num = num * 0.001;
+        }else if (to.equalsIgnoreCase("ft")){
+            num = num * 3.2808399;
+        }else if (to.equalsIgnoreCase("yd")){
+            num = num * 1.0936133;
+        }
+
+        System.out.printf("%f %s",num,to);
+
+
+
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+import java.util.Scanner;
+
+/**
+ * Created by Ivan on 14.2.2017 ã..
+ */
+public class ComplexIfElse {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String fruit = scanner.nextLine().toLowerCase();
+        String day = scanner.nextLine().toLowerCase();
+        double qty = Double.parseDouble(scanner.nextLine());
+
+        if (day.equals("monday") || day.equals("tuesday") || day.equals("wednesday") || day.equals("thursday")
+                || day.equals("friday")) {
+            if (fruit.equals("banana")) {
+                System.out.println(qty * 2.5);
+            } else if (fruit.equals("apple")) {
+                System.out.println(qty * 1.2);
+            } else if (fruit.equals("orange")) {
+                System.out.println(qty * 0.85);
+            } else if (fruit.equals("grapefruit")) {
+                System.out.println(qty * 1.45);
+            } else if (fruit.equals("kiwi")) {
+                System.out.println(qty * 2.7);
+            } else if (fruit.equals("pineapple")) {
+                System.out.println(qty * 5.50);
+            } else if (fruit.equals("grapes")) {
+                System.out.println(qty * 3.85);
+            }
+        } else
+
+        {
+            if (day.equals("saturday") || day.equals("sunday")) {
+
+            }
+            if (fruit.equals("banana")) {
+                System.out.println(qty * 2.7);
+            } else if (fruit.equals("apple")) {
+                System.out.println(qty * 1.25);
+            } else if (fruit.equals("orange")) {
+                System.out.println(qty * 0.90);
+            } else if (fruit.equals("grapefruit")) {
+                System.out.println(qty * 1.6);
+            } else if (fruit.equals("kiwi")) {
+                System.out.println(qty * 3.0);
+            } else if (fruit.equals("pineapple")) {
+                System.out.println(qty * 5.6);
+            } else if (fruit.equals("grapes")) {
+                System.out.println(qty * 4.20);
+
+            }
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

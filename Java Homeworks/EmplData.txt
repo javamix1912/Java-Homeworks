@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+/**
+ * Created by Ivan on 12-Aug-17.
+ */
+public class DrawingWithLoops {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String name = scanner.nextLine();
+        int age = Integer.parseInt(scanner.nextLine());
+        int empID = Integer.parseInt(scanner.nextLine());
+        double salary = Double.parseDouble(scanner.nextLine());
+
+        System.out.printf("Name: %s\nAge: %d\nEmployee ID: %08d\nSalary: %.2f",name,age,empID,salary);
+
+
+    }
+}

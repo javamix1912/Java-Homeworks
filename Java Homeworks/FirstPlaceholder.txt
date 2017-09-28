@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+/**
+ * Created by Ivan on 24.1.2017 ã..
+ */
+public class SimpleCalculations {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String textOne = scanner.nextLine();
+        String textTwo = scanner.nextLine();
+        String textThree = scanner.nextLine();
+        String textFour = scanner.nextLine();
+        System.out.printf("This is my first placeholder : %s %s %s %s",textOne,textTwo,textThree,textFour);
+    }
+}

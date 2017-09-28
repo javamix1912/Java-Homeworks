@@ -1,0 +1,15 @@
+import java.io.PrintStream;
+import java.util.Scanner;
+
+/**
+ * Created by Ivan on 24.1.2017 ã..
+ */
+public class SimpleCalculations {
+    public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+       double a = Double.parseDouble(scanner.nextLine());
+       double h = Double.parseDouble(scanner.nextLine());
+       double result = a * h / 2;
+       System.out.printf("%.2f",result);
+    }
+}

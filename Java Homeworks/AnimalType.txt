@@ -1,0 +1,44 @@
+
+import java.time.DayOfWeek;
+import java.util.Scanner;
+
+/**
+ * Created by Ivan on 14.2.2017 ã..
+ */
+public class ComplexIfElse {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String animal = scanner.nextLine().toLowerCase();
+
+        switch (animal){
+            case "dog" :
+                System.out.println("mammal");
+                break;
+            case "snake"  :
+                System.out.println("reptile");
+            case "tortoise"  :
+                System.out.println("reptile");
+            case "crocodile"  :
+                System.out.println("reptile");
+                break;
+            case "cat" :
+                System.out.println("unknown");
+
+        }
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

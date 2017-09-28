@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+/**
+ * Created by Ivan on 6.2.2017 ã..
+ */
+public class IfElse {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String pass = "s3cr3t!P@ssw0rd";
+        String pass2 = scanner.nextLine();
+
+
+        if (pass2.equals(pass)){
+            System.out.println("Welcome");
+        } else {
+            System.out.println("Wrong password!");
+        }
+    }
+}
